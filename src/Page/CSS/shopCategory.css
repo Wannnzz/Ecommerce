@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.container img{
+    margin-top: -10px;
+}
+
+.category-container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.showing{
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+
+.category-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 60px;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
