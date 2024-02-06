@@ -17,6 +17,7 @@ function App() {
       <BrowserRouter>
         <NavigatorBar/>
        {/* comment */}
+       {/* Wannnnzzzzzzz */}
         <Routes>
           <Route path='/' element={<Shop/>}/>
           <Route path='/women' element={<ShopCategory banner={women_banner} category="women"/>}/>
