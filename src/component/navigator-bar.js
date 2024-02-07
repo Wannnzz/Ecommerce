@@ -46,8 +46,13 @@ const NavigatorBar = () => {
                 </li>
 
               <li>
-                <Link to='/cart' style={{ textDecoration:'none',color:'black' }}><span className="cart"><ion-icon name="cart"></ion-icon></span></Link>
-                </li>
+                <Link to='/cart' style={{ textDecoration:'none',color:'black' }}>
+                  <span className="cart"><ion-icon name="cart"></ion-icon>
+                  <div>0</div>
+                  </span>
+                </Link>
+                 </li>
+
               <li >
                 <Link to='/login'style={{ textDecoration:'none' ,color:'black'}}><span className="log-in">Log in  <ion-icon name="person-sharp"></ion-icon></span></Link>
                 </li>
