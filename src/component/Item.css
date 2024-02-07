@@ -30,6 +30,7 @@
 .item-price-old{
     font-weight: 400;
     text-decoration: line-through;
+    color: gray;
     
 }
 

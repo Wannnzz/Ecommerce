@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import './web-page.css';
-import {useState,useEffect} from "react";
+import {useState,useEffect, useContext} from "react";
+import { ShopContext } from '../Context/ShopContext';
 
 const NavigatorBar = () => {
 // ---------------click menu
   const [menu,setMenu] = useState("home");
+  const {getTotalCartItems} =useContext (ShopContext);
 
 
      // ---------------scrolled
@@ -25,7 +27,7 @@ const NavigatorBar = () => {
 
     return(
        <>
-        <div className={`navigation-container ${scrolled ? 'scrolled' :''}`}>
+        <div className={`navigation-container ${scrolled ? 'scrolled' :null}`}>
         <div className="container-nav-bar">
             <div className="logo">
                   <a href="/">LOGO</a>
@@ -48,7 +50,7 @@ const NavigatorBar = () => {
               <li>
                 <Link to='/cart' style={{ textDecoration:'none',color:'black' }}>
                   <span className="cart"><ion-icon name="cart"></ion-icon>
-                  <div>0</div>
+                  <div>{getTotalCartItems()}</div>
                   </span>
                 </Link>
                  </li>
