@@ -1,10 +1,11 @@
 import './App.css';
 import NavigatorBar from './component/navigator-bar';
-import { BrowserRouter,Route, Routes} from 'react-router-dom';
+import { BrowserRouter ,Route, Routes} from 'react-router-dom';
 import Shop from './Page/shop';
 import ShopCategory from './Page/cataegory';
 import Product from './Page/product';
 import LogIn from './Page/loginSignIn';
+import Profile from './Page/profile';
 import Cart from './Page/cart';
 import Footer from './component/footer';
 import men_banner from  './component/Assets/banner_mens.png'
@@ -26,6 +27,7 @@ function App() {
          </Route>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<LogIn/>}/>
+        <Route path='/profile' element={<Profile/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

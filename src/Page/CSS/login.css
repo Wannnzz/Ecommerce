@@ -47,6 +47,15 @@
     height: 40px;
     font-size: 16px;
     
+    
+}
+
+input:focus{
+    outline:none;
+    border-color:rgb(0, 0, 0);
+  
+    
+    
 }
 
 .login-wrapper button{
