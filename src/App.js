@@ -6,6 +6,7 @@ import ShopCategory from './Page/cataegory';
 import Product from './Page/product';
 import LogIn from './Page/loginSignIn';
 import Profile from './Page/profile';
+import Register from './Page/register';
 import Cart from './Page/cart';
 import Footer from './component/footer';
 import men_banner from  './component/Assets/banner_mens.png'
@@ -28,6 +29,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/login' element={<LogIn/>}/>
         <Route path='/profile' element={<Profile/>}/>
+        <Route path='/register' element={<Register/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

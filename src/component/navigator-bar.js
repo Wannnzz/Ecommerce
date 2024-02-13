@@ -10,7 +10,7 @@ const NavigatorBar = () => {
 
 
      // ---------------scrolled
-  const [scrolled,setScrolled] = useState(false);
+  const [scrolled,setScrolled] = useState();
   useEffect(()=>{
     const handleScroll = () =>{
       const isScrolled = window.scrollY > 0;
@@ -56,7 +56,11 @@ const NavigatorBar = () => {
                  </li>
 
               <li >
-                <Link to='/login'style={{ textDecoration:'none' ,color:'black'}}><span className="log-in">Log in  <ion-icon name="person-sharp"></ion-icon></span></Link>
+                {localStorage.getItem('token')?
+                <button style={{ textDecoration:'none' ,color:'black', backgroundColor:'white'}} className="log-in" onClick={()=>{localStorage.removeItem('token');window.location.replace('/')}}>Log out</button>
+                :<Link to='/login'style={{ textDecoration:'none' ,color:'black'}}><span className="log-in">Log in  <ion-icon name="person-sharp"></ion-icon></span></Link>
+                }
+                
                 </li>
        
             </ul>

@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useNavigate} from "react-router-dom";
-import './CSS/login.css'
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+import './CSS/login.css';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 
 
@@ -30,7 +31,7 @@ const LogIn = () => {
       var raw = JSON.stringify({
         "username": inputs.username,
         "password": inputs.password,
-        "expiresIn": 60000
+        "expiresIn": 600000
       });
       
       var requestOptions = {
@@ -53,6 +54,7 @@ const LogIn = () => {
              }).then((value) =>{
                localStorage.setItem('token',result.accessToken)
                Navigate('/profile')
+             
              })
          }else{
             MySwal.fire({
@@ -104,7 +106,7 @@ const LogIn = () => {
  
                  <div >
                      Already have an account? 
-                     <span>Login here</span>
+                     <Link to='/register' className="register">  Register here</Link>
                   </div>    
                 
                  <div  className="checkbox"><input type="checkbox" value="value1"></input>
