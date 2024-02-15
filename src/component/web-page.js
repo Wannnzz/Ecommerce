@@ -122,7 +122,7 @@ const WebPage = () =>{
                    </div>
                        <div className='name-shirt'>Name shirt</div>
                        <div className='type'>Type</div>
-                       <p>______________________________<button className='arrival-btn'><ion-icon style={{ color:'white' }} name="cart"></ion-icon></button></p>
+                      
                       <div className='price'>price</div>
             </div>
 
@@ -134,7 +134,7 @@ const WebPage = () =>{
                    </div>
                        <div className='name-shirt'>Name shirt</div>
                        <div className='type'>Type</div>
-                       <p>______________________________<button className='arrival-btn'><ion-icon style={{ color:'white' }} name="cart"></ion-icon></button></p>
+                       
                       <div className='price'>price</div>
             </div>
 
@@ -146,7 +146,7 @@ const WebPage = () =>{
                    </div>
                        <div className='name-shirt'>Name shirt</div>
                        <div className='type'>Type</div>
-                       <p>__________________________<button className='arrival-btn'><ion-icon style={{ color:'white' }} name="cart"></ion-icon></button></p>
+                       
                       <div className='price'>price</div>
             </div>
 
@@ -161,25 +161,13 @@ const WebPage = () =>{
       <div className='accessory-box'>
       
         <div>This Season</div>
-        <p>BE READY TO CHANCE</p>
-        <button>Shop Accessorise</button>
+        <p>BE READY TO CHANGE</p>
+        <button>Coming Soon</button>
           
      
       </div>
       {ImageSlider()}
 
-      {/* <div className='slider-container'>
-        <div className='slide-images'>
-        <img src='/images/w3.jpg' className='slide-img' alt=""/>
-        <img src='/images/w3-2.jpg' className='slide-imge'alt=""/>
-        <img src='/images/w1-2.jpg' className='sslide-img'alt=""/>
-        </div>
-
-        <button className='preBtn'> <ion-icon name="chevron-back-outline"></ion-icon></button>
-        <button className='nextBtn'><ion-icon name="chevron-forward-outline"></ion-icon></button>
-
-
-    </div> */}
 
    </div>
 

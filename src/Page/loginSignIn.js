@@ -53,7 +53,7 @@ const LogIn = () => {
                icon: "success"
              }).then((value) =>{
                localStorage.setItem('token',result.accessToken)
-               Navigate('/profile')
+               Navigate('/')
              
              })
          }else{

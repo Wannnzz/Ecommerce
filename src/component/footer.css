@@ -1,0 +1,38 @@
+.footer-container{
+    display:flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 60px auto;
+    margin-bottom: 0;
+}
+
+.footer-one{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-two{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightpink;
+    align-items: center;
+    max-width: 2000px;
+}
+
+.contact-flex{
+    display: flex;
+    gap: 10px;
+}
+
+.icon{
+  
+    font-size: 30px;
+}
